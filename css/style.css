@@ -1,0 +1,200 @@
+/* Global Varaible */
+:root {
+  --main-color: #2196f3;
+}
+/* Global Varaible */
+
+/* Global Rules */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+/* Global Rules */
+
+/* Start styling Game */
+
+.game {
+  background-color: #f1f4f8;
+  min-height: 100vh;
+}
+
+.name {
+  color: white;
+  background-color: var(--main-color);
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.message {
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.message span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.message span::before {
+  content: "{ ";
+}
+.message span::after {
+  content: " }";
+}
+
+.start {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #009688;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+}
+
+.start:hover {
+  background-color: #ccc;
+  color: rgb(22, 20, 20);
+  letter-spacing: 6px;
+}
+
+.the-word {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--main-color);
+  user-select: none;
+}
+
+.input {
+  margin: 15px auto;
+  width: 100%;
+  border: 2px solid var(--main-color);
+  font-size: 20px;
+  padding: 15px;
+  outline: none;
+  text-align: center;
+  text-transform: capitalize;
+  caret-color: var(--main-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.input:focus {
+  border: 5px solid var(--main-color);
+}
+
+::placeholder {
+  font-size: 18px;
+}
+
+.uncoming {
+  background-color: white;
+  display: flex;
+  padding: 15px;
+  margin: 15px 0;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.uncoming div {
+  background-color: var(--main-color);
+  font-weight: bold;
+  margin: 4px;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.control span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.finish {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+}
+
+.finish .good {
+  color: var(--main-color);
+}
+
+.finish .bad {
+  color: red;
+}
+/* End Styling Game */
