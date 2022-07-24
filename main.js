@@ -47,19 +47,19 @@ const defauletLevelsSeconds = lvls[defauletLevelsName];
 
 // catch Selectors 
 let lvlNameSpan = document.querySelector(".message .lvl")
-let secondSpan = document.querySelector(".message .seconds")
-let startButton = document.querySelector(".start");
-let theWord = document.querySelector(".the-word")
-let input = document.querySelector(".input");
-let uncomeWords = document.querySelector(".uncoming")
-let timeLeftSpan = document.querySelector(".time span")
-let scoreGot = document.querySelector(".score .got")
-let scoreTotal = document.querySelector(".control .score .total")
-let finishMessage = document.querySelector(".finish")
+secondSpan = document.querySelector(".message .seconds"),
+    startButton = document.querySelector(".start"),
+    theWord = document.querySelector(".the-word"),
+    input = document.querySelector(".input"),
+    uncomeWords = document.querySelector(".uncoming"),
+    timeLeftSpan = document.querySelector(".time span"),
+    scoreGot = document.querySelector(".score .got"),
+    scoreTotal = document.querySelector(".control .score .total"),
+    finishMessage = document.querySelector(".finish"),
 
-// settings levels Name + Seconds + Score
+    // settings levels Name + Seconds + Score
 
-lvlNameSpan.innerHTML = defauletLevelsName;
+    lvlNameSpan.innerHTML = defauletLevelsName;
 secondSpan.innerHTML = defauletLevelsSeconds;
 scoreTotal.innerHTML = words.length;
 timeLeftSpan.innerHTML = defauletLevelsSeconds;
